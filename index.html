@@ -7,15 +7,19 @@
     </style>
 </head>
 <body>
-
+  <form>
+    <label>Player 1</label>
+    <input type="color" id="p1Color" value="#0abde3"/>
+    <input type="text" id="p1Name" value="Blue"/>
+    <label>Player 2</label>
+    <input type="color" id="p2Color" value="#ee5253"/>
+    <input type="text" id="p2Name" value="Red"/>
+    <input type="submit" id="start" value="start game">
+  </form>
 <h1 id="gameStatus"></h1>
 <div id="game">
   <table id="board"></table>
 </div>
-<div id="playAgainButton">
-  <button  class="hidden">Play Again?</button>
-</div>
-
 <script src="script.js"></script>
 </body>
 </html>

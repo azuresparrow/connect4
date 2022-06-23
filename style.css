@@ -39,29 +39,7 @@ h1 {
         top: 0;
     }
 }
-
-.player1{
-    background-color: #0abde3;
-}
-
-.player2{
-    background-color: #ee5253;
-}
-
-.player1Text{
-    color: #0abde3;
-}
-
-.player2Text{
-    color: #ee5253;
-}
-
-.draw {
-   background-color:  #5f27cd;
-}
-
 .textVictory{
-    color: #222f3e;
     font-weight: 400;
     font-style: normal;
 }
@@ -88,7 +66,10 @@ h1 {
     padding:10px;
     border-radius: 5px;;
 }
-
+form {
+    color:white;
+    text-align: center;
+}
 .hidden {
     display: none;
 }

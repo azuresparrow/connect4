@@ -1,0 +1,102 @@
+body {
+    background-color: #222f3e;
+    color:#576574;
+}
+
+#game {
+    display:flex;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+}
+
+
+#board td {
+    width: 50px;
+    height: 50px;
+    border: solid 1px #666;
+    position: relative;
+}
+
+.piece {
+    margin: 5px;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    position: absolute;
+    animation: slide-in 0.5s forwards;
+    top:-200px;
+}
+
+@keyframes slide-in {
+    100% {
+        top: 0;
+    }
+}
+
+.player1{
+    background-color: #0abde3;
+}
+
+.player2{
+    background-color: #ee5253;
+}
+
+.player1Text{
+    color: #0abde3;
+}
+
+.player2Text{
+    color: #ee5253;
+}
+
+.draw {
+   background-color:  #5f27cd;
+}
+
+.textVictory{
+    color: #222f3e;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#playAgainButton {
+    display: flex;
+    justify-content: center;
+    margin:20px;
+}
+#playAgainButton button {
+    background-color: #5f27cd;
+    cursor: pointer;
+    color:lightgray;
+    border: none;
+    padding:10px;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+}
+#playAgainButton button:hover {
+    background-color: #6b2ceb;
+    color:lightgray;
+    border: none;
+    padding:10px;
+    border-radius: 5px;;
+}
+
+.hidden {
+    display: none;
+}
+
+#column-top td {
+border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+background-color: gold;
+}

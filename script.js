@@ -74,10 +74,8 @@ class Game{
     }
     //returns the lowest available Y for a piece given X
     findLowestAvailableSlot(x) {
-        let scan = this.height-1; //starts from the lowest possible height
-        while(scan >= 0){ //steps upward until it reaches the top 
-            if(this.board[scan][x] == 0) return scan; //returns as soon as it finds an opening
-            scan--; 
+        for(let scan = this.height-1; scan >= 0; scan--){ //steps upward until it reaches the top 
+            if(this.board[scan][x] == 0) return scan; //returns as soon as it finds an opening 
         }
         return null; //no slot remaining
     }
